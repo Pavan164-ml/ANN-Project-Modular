@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML Deployment</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+<body>
+ <div class="login">
+	<h1>Predict Iris Class</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form> 
+
+
+    	<input type="text" name="Gender" placeholder="gender" required="required" />
+        <input type="text" name="Senior Citizen" placeholder="SeniorCitizen" required="required" />
+        <input type="text" name="Partner" placeholder="Partner" required="required" />
+        <input type="text" name="Dependents" placeholder="Dependents    " required="required" />
+        <input type="text" name="Tenure" placeholder="tenure" required="required" />
+        <input type="text" name="PhoneService" placeholder="PhoneService" required="required" />
+        <input type="text" name="MultipleLines" placeholder="MultipleLines" required="required" />
+        <input type="text" name="OnlineSecurity" placeholder="OnlineSecurity" required="required" />
+        <input type="text" name="OnlineBackup" placeholder="OnlineBackup" required="required" />
+        <input type="text" name="DeviceProtection" placeholder="DeviceProtection" required="required" />
+        <input type="text" name="TechSupport" placeholder="TechSupport" required="required" />
+        <input type="text" name="StreamingTV" placeholder="StreamingTV" required="required" />
+        <input type="text" name="StreamingMovies" placeholder="StreamingMovies" required="required" />
+        <input type="text" name="PaperlessBilling" placeholder="PaperlessBilling" required="required" />
+        <input type="text" name="MonthlyCharges" placeholder="MonthlyCharges" required="required" />
+        <input type="text" name="TotalCharges" placeholder="TotalCharges" required="required" />
+        <input type="text" name="InternetService_DSL" placeholder="InternetService_DSL" required="required"/>
+        <input type="text" name="InternetService_Fiber optic" placeholder="InternetService_Fiber optic" required="required"/>
+        <input type="text" name="InternetService_No" placeholder="InternetService_No" required="required"/>
+        <input type="text" name="Contract_Month-to-month" placeholder="Contract_Month-to-month" required="required"/>
+        <input type="text" name="Contract_One year" placeholder="Contract_One year" required="required"/>
+        <input type="text" name="Contract_Two year" placeholder="Contract_Two year" required="required"/>
+        <input type="text" name="PaymentMethod_Credit card (automatic)" placeholder="PaymentMethod_Credit card (automatic)" required="required"/>
+        <input type="text" name="PaymentMethod_Bank transfer (automatic)" placeholder="PaymentMethod_Bank transfer (automatic)" required="required"/>
+        <input type="text" name="PaymentMethod_Electronic check" placeholder="PaymentMethod_Electronic check" required="required"/>
+        <input type="text" name="PaymentMethod_Mailed check" placeholder="PaymentMethod_Mailed check" required="required"/>
+       
+        
+       
+        <button type="submit"></button>
+    </form>
+
+   <br>
+   <br>
+ </div>
+</body>
+</html>
+
+
+<!-- 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'OnlineSecurity', 'OnlineBackup',
+       'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies',
+       'PaperlessBilling', 'MonthlyCharges', 'TotalCharges', 'Churn',
+       'InternetService_DSL', 'InternetService_Fiber optic',
+       'InternetService_No', 'Contract_Month-to-month', 'Contract_One year',
+       'Contract_Two year', 'PaymentMethod_Bank transfer (automatic)',
+       'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check' -->

@@ -1,0 +1,30 @@
+
+params:
+  epochs: 1
+  batch_size: 32
+  validation_datasize : 1056
+  loss_function: binary_crossentropy
+  metrics: accuracy
+  optimizer: SGD
+  num_classes : 2
+  patience: 5
+  restore_best_weights: True
+
+
+artifacts:
+  artifacts_dir: artifacts
+  model_dir: model
+  plots_dir: plots`1
+  model_name: model.h5
+  CHECKPOINT_DIR: checkpoints
+  
+
+  ## 7043 is the total number of records in the data
+  ## 70 % goes to training - 4930
+  ## rest 30% is equally divided into training and validation_data - 1056 + 1056 
+
+  
+logs:
+  logs_dir: logs_dir
+  general_logs: general_logs
+  TENSORBOARD_ROOT_LOG_DIR: tensorboard_logs
