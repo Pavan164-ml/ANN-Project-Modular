@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>ML Deployment</title>
+  <title color="white" >ML Deployment</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
@@ -10,48 +10,69 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   
 </head>
-<body>
+<body  style="background: rgb(184, 67, 67);">
  <div class="login">
-	<h1>Predict Iris Class</h1>
-
+	<center><h1>Customer Churn data Prediction</h1></div><center>
      <!-- Main Input For Receiving Query to our ML -->
-    <form> 
-
-
-    	<input type="text" name="Gender" placeholder="gender" required="required" />
+    <form action="{{ url_for('predict')}}" , method="post"> 
+      <center>	<input type="text" name="Gender" placeholder="gender" required="required" />
+        <br><hr>
         <input type="text" name="Senior Citizen" placeholder="SeniorCitizen" required="required" />
+        <br><hr>
         <input type="text" name="Partner" placeholder="Partner" required="required" />
-        <input type="text" name="Dependents" placeholder="Dependents    " required="required" />
+        <br><hr>
+        <input type="text" name="Dependents" placeholder="Dependents" required="required" />
+        <br><hr>
         <input type="text" name="Tenure" placeholder="tenure" required="required" />
+        <br><hr>
         <input type="text" name="PhoneService" placeholder="PhoneService" required="required" />
+        <br><hr>
         <input type="text" name="MultipleLines" placeholder="MultipleLines" required="required" />
+        <br><hr>
         <input type="text" name="OnlineSecurity" placeholder="OnlineSecurity" required="required" />
+        <br><hr>
         <input type="text" name="OnlineBackup" placeholder="OnlineBackup" required="required" />
+        <br><hr>
         <input type="text" name="DeviceProtection" placeholder="DeviceProtection" required="required" />
+        <br><hr>
         <input type="text" name="TechSupport" placeholder="TechSupport" required="required" />
+        <br><hr>
         <input type="text" name="StreamingTV" placeholder="StreamingTV" required="required" />
+        <br><hr>
         <input type="text" name="StreamingMovies" placeholder="StreamingMovies" required="required" />
+        <br><hr>
         <input type="text" name="PaperlessBilling" placeholder="PaperlessBilling" required="required" />
+        <br><hr>
         <input type="text" name="MonthlyCharges" placeholder="MonthlyCharges" required="required" />
+        <br><hr>
         <input type="text" name="TotalCharges" placeholder="TotalCharges" required="required" />
+        <br><hr>
         <input type="text" name="InternetService_DSL" placeholder="InternetService_DSL" required="required"/>
+        <br><hr>
         <input type="text" name="InternetService_Fiber optic" placeholder="InternetService_Fiber optic" required="required"/>
+        <br><hr>
         <input type="text" name="InternetService_No" placeholder="InternetService_No" required="required"/>
+        <br><hr>
         <input type="text" name="Contract_Month-to-month" placeholder="Contract_Month-to-month" required="required"/>
+        <br><hr>
         <input type="text" name="Contract_One year" placeholder="Contract_One year" required="required"/>
+        <br><hr>
         <input type="text" name="Contract_Two year" placeholder="Contract_Two year" required="required"/>
-        <input type="text" name="PaymentMethod_Credit card (automatic)" placeholder="PaymentMethod_Credit card (automatic)" required="required"/>
+        <br><hr>
         <input type="text" name="PaymentMethod_Bank transfer (automatic)" placeholder="PaymentMethod_Bank transfer (automatic)" required="required"/>
+        <br><hr>
+        <input type="text" name="PaymentMethod_Credit card (automatic)" placeholder="PaymentMethod_Credit card (automatic)" required="required"/>
+        <br><hr>
         <input type="text" name="PaymentMethod_Electronic check" placeholder="PaymentMethod_Electronic check" required="required"/>
-        <input type="text" name="PaymentMethod_Mailed check" placeholder="PaymentMethod_Mailed check" required="required"/>
-       
-        
-       
-        <button type="submit"></button>
-    </form>
+        <br><hr>
+        <input type="text" name="PaymentMethod_Mailed check" placeholder="PaymentMethod_Mailed check" required="required"/> 
+        <br><hr>
+        <button type="submit" class="btn btn-primary btn-block btn-large">"Predict the outcome"</button ></center>
+    </form><hr>
 
    <br>
    <br>
+   {{ prediction_text }}
  </div>
 </body>
 </html>

@@ -1,0 +1,64 @@
+
+
+
+All unique values of the data source
+
+
+************************************************************
+customerID : ['7590-VHVEG' '5575-GNVDE' '3668-QPYBK' ... '4801-JZAZL' '8361-LTMKD'
+ '3186-AJIEK']
+************************************************************
+gender : ['Female' 'Male']
+************************************************************
+SeniorCitizen : [0 1]
+************************************************************
+Partner : ['Yes' 'No']
+************************************************************
+Dependents : ['No' 'Yes']
+************************************************************
+tenure : [ 1 34  2 45  8 22 10 28 62 13 16 58 49 25 69 52 71 21 12 30 47 72 17 27
+  5 46 11 70 63 43 15 60 18 66  9  3 31 50 64 56  7 42 35 48 29 65 38 68
+ 32 55 37 36 41  6  4 33 67 23 57 61 14 20 53 40 59 24 44 19 54 51 26  0
+ 39]
+************************************************************
+PhoneService : ['No' 'Yes']
+************************************************************
+MultipleLines : ['No phone service' 'No' 'Yes']
+************************************************************
+InternetService : ['DSL' 'Fiber optic' 'No']
+************************************************************
+OnlineSecurity : ['No' 'Yes' 'No internet service']
+************************************************************
+OnlineBackup : ['Yes' 'No' 'No internet service']
+************************************************************
+DeviceProtection : ['No' 'Yes' 'No internet service']
+************************************************************
+TechSupport : ['No' 'Yes' 'No internet service']
+************************************************************
+StreamingTV : ['No' 'Yes' 'No internet service']
+************************************************************
+StreamingMovies : ['No' 'Yes' 'No internet service']
+************************************************************
+Contract : ['Month-to-month' 'One year' 'Two year']
+************************************************************
+PaperlessBilling : ['Yes' 'No']
+************************************************************
+PaymentMethod : ['Electronic check' 'Mailed check' 'Bank transfer (automatic)'
+ 'Credit card (automatic)']
+************************************************************
+MonthlyCharges : [29.85 56.95 53.85 ... 63.1  44.2  78.7 ]
+************************************************************
+TotalCharges : ['29.85' '1889.5' '108.15' ... '346.45' '306.6' '6844.5']
+************************************************************
+
+
+
+Required columns 
+
+ gender  SeniorCitizen  Partner  Dependents    tenure  PhoneService 
+ MultipleLines  OnlineSecurity  OnlineBackup  DeviceProtection  TechSupport
+ StreamingTV  StreamingMovies  PaperlessBilling  MonthlyCharges
+ TotalCharges  Churn  InternetService_DSL  InternetService_Fiber optic
+ InternetService_No  Contract_Month-to-month  Contract_One year
+ Contract_Two year  PaymentMethod_Bank transfer (automatic)
+ PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check
